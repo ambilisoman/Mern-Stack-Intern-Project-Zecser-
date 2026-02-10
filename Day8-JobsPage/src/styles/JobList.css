@@ -1,0 +1,83 @@
+.job-list-container {
+  margin-top: 20px;
+}
+
+
+.jobs-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.no-jobs {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 16px;
+  background-color: #fafafa;
+  border-radius: 14px;
+  border: 2px dashed #e5e5e7;
+}
+
+.no-jobs h3 {
+  font-size: 20px;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007aff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e5e7;
+}
+
+.page-button {
+  padding: 10px 20px;
+  background-color: #f2f2f7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.page-button:hover:not(:disabled) {
+  background-color: #007aff;
+  color: white;
+}
+
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.current-page {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
