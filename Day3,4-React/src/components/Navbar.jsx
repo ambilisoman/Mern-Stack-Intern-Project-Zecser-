@@ -18,8 +18,8 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "15px 30px",
-    backgroundColor: "#16063d",
-    color: "#fff"
+    backgroundColor: "#0d022b",
+    color: "white"
   },
 
   menu: {
@@ -28,10 +28,8 @@ const styles = {
   },
 
   link: {
-    color: "#fff",
-    textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "500"
+    color: "white",
+    textDecoration: "none"
   }
 };
 
