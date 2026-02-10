@@ -1,16 +1,53 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  Job Card System – React (Day 6 Task)
+This project demonstrates rendering dynamic job listings using reusable React components. It focuses on list rendering, component composition, and responsive UI design.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+* Dynamic job list rendering using `.map()`
+* Reusable **JobCard** component
+* Component splitting (Navbar, Sidebar, JobList)
+* Font Awesome icons integration
+* Mobile responsive layout
+* Toggle navbar menu (hamburger)
+* Clean card-based UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Job Fields
 
-## Expanding the ESLint configuration
+Each job contains:
+* Title
+* Company
+* Experience
+* Salary
+* Apply Button
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## List Rendering
+Jobs are rendered dynamically:
+
+```jsx
+jobsData.map((job) => (
+  <JobCard key={job.id} job={job} />
+))
+```
+
+* `.map()` → loops job array
+* `key` → unique identifier
+* `job` → passed as props
+
+## UI & Responsiveness
+
+* Desktop → Sidebar + Job Feed layout
+* Mobile → Stacked layout
+* Navbar includes hamburger toggle menu
+
+
+## Learning Outcomes
+
+* Rendering lists in React
+* Importance of `key` prop
+* Props & reusable components
+* Data-driven UI
+* Responsive design basics
+* Component composition
+
