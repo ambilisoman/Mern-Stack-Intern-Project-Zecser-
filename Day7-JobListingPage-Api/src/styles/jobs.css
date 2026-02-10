@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: #16215c;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  width: 40%;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+.nav-icons span {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/* LAYOUT */
+
+.layout {
+  display: flex;
+  padding: 20px;
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 250px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.banner {
+  height: 70px;
+  background: #16215c;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 70px;
+  border-radius: 50%;
+  margin-top: -35px;
+  border: 3px solid white;
+}
+
+.menu-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.menu-card p {
+  margin: 10px 0;
+}
+
+/* JOBS */
+
+.jobs-container {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.jobs-header {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.job-card {
+  background: #dfe3f0;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.job-card a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* LOADER */
+
+.loader {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ccc;
+  border-top: 5px solid #16215c;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reusable Button */
+.custom-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #16215c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: #0f1740;
+}
+
+/* ERROR */
+
+.error {
+  color: red;
+  text-align: center;
+  margin: 20px;
+}
+
+/* BOTTOM NAV (MOBILE) */
+
+.bottom-nav {
+  display: none;
+}
+
+/* 📱 RESPONSIVE */
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .search {
+    width: 60%;
+  }
+
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #16215c;
+    color: white;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .plus {
+    background: white;
+    color: #16215c;
+    padding: 5px 12px;
+    border-radius: 50%;
+  }
+}

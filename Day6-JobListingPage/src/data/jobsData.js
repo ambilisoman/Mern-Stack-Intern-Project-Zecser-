@@ -27,6 +27,48 @@ const jobsData = [
     experience: "2–4 Years",
     salary: "₹7 – ₹11 LPA",
   },
+  {
+    id: 5,
+    title: "Full Stack Developer",
+    company: "Techno Innovators",
+    experience: "2-5 Years",
+    salary: "₹9 – ₹15 LPA",
+  },
+  {
+    id: 6,
+    title: "Python Full Stack Developer",
+    company: "DataSys",
+    experience: "3-4 Years",
+    salary: "₹6 – ₹9 LPA",
+  },
+  {
+    id: 7,
+    title: "Software Engineer",
+    company: "CodeCraft",
+    experience: "0-2 Years",
+    salary: "₹10 – ₹16 LPA",
+  },
+  {
+    id: 8,
+    title: "Java Developer",
+    company: "SoftSolutions",
+    experience: "4-6 Years",
+    salary: "₹3 – ₹5 LPA",
+  },
+  {
+    id: 9,
+    title: "Junior Software Developer",
+    company: "StartUp Hub",
+    experience: "0-2 Years",
+    salary: "₹9 – ₹15 LPA",
+  },
+  {
+    id: 10,
+    title: "DevOps Engineer",
+    company: "CloudOps",
+    experience: "4-7 Years",
+    salary: "₹3 – ₹9 LPA",
+  },
 ];
 
 export default jobsData;
