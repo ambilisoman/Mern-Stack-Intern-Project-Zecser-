@@ -1,0 +1,23 @@
+.sidebar {
+  width: 250px;
+  padding: 20px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  border-radius: 50%;
+}
+
+.menu {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+}
