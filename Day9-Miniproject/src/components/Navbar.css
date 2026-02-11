@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #16215c;
+  padding: 12px 20px;
+  color: white;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+}
+
+/* Search */
+.search {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  width: 40%;
+}
+
+/* Icons */
+.nav-icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Hamburger hidden in desktop */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide icons by default */
+  .nav-icons {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #16215c;
+    padding: 15px;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+
+  .nav-icons.show {
+    display: flex;
+  }
+
+  .nav-icons span {
+    margin: 10px 0;
+  }
+
+  /* Adjust search */
+  .search {
+    width: 55%;
+  }
+}
