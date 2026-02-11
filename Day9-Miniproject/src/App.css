@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,62 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  h1 {
+    font-size: 28px !important;
+  }
+  
+  .search-container {
+    flex-direction: column;
+  }
+  
+  .search-container input,
+  .search-container button {
+    width: 100%;
+  }
+  
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature {
+    max-width: 100%;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  h1 {
+    font-size: 24px !important;
+  }
+  
+  .hero {
+    padding: 20px 10px !important;
+  }
 }
