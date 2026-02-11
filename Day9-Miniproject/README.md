@@ -1,16 +1,63 @@
-# React + Vite
+# Mern-Stack-Intern-Project-Zecser-
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive 3 month internship focusing on Frontend development with daily tasks and real-world workflow practices.
 
-Currently, two official plugins are available:
+## **Technologies Used**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React.js, JavaScript (ES6+), HTML5, CSS3
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
+- **Tools:** Git, GitHub, VS Code, Postman
+- **Deployment:** (To be added)
 
-## React Compiler
+## **Project Structure**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+Mern-Stack-Intern-Project-Zecser/
+├── day1/          # Html basics- Job Portal landing page
+├── day2/          # JS programs
+├── day3/          # React app setup
+├── day4/          # Components & Props 
+├── day5/          # State & Hooks
+├── day6/          # Fetching and job listing 
+├── day7/          # Public API fetching
+├── day8/          # Separation of concerns, Services layer, Environment variables, Reusable architecture
+├── day9/          # Git & Workflow (Current)
+├── README.md      # Project Documentation
+└── .gitignore     # Git ignore file
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **Day 9 - Git & Workflow**
+**Objective:** Learn real-world development practices and Git workflow.
+
+**Tasks Completed:**
+1. Created feature branch `feature/day9-component`
+2. Added new Navbar component with responsive design
+3. Implemented professional CSS styling
+4. Created multiple commits with clear messages
+5. Updated project documentation
+
+**Component Created:**
+- **Navbar Component:** A responsive navigation bar with gradient design, hover effects, and mobile responsiveness
+
+## **Day 9 Specific Implementation**
+
+### **Git Commands Used:**
+```bash
+# Branch creation
+git checkout -b feature/day9-component
+
+# Commits with conventional messages
+git commit -m "feat: add responsive Navbar component"
+git commit -m "style: enhance Navbar"
+git commit -m "docs: update README with day9 progress"
+
+# Push to remote
+git push origin feature/day9-component
+```
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
